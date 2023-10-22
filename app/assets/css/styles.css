@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (max-width: 30em) {
+    .image {
+        width: 3em;
+    }
+}
+
+.navbar {
+    background: rgba(2, 7, 37, 0.8);
+    color: #fff;
+    height: 8vh;
+
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+}
+
+.navbar > img {
+    height: 80%;
+}
+
+.container__item {
+    border-bottom: rgba(2, 7, 37, 0.8) 1px solid;
+    padding: 1%;
+    margin: 0.2%;
+}
+
+.red {
+    color: #fa787e;
+}
+
+.container__item > ul > li {
+    list-style: none;
+}

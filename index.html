@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt" ng-app="app">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJs</title>
+
+
+  <link href="./app//assets/css/styles.css" rel="stylesheet" />
+
+  <!-- AngularJs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="./app/modules/app.module.js"></script>
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <img src="./app/assets/images/AngularJS_logo-white.png" />
+  </nav>
+
+  <div class="container" ng-controller="HelloWorld">
+
+    <div class="container__item">
+      <h3>{{ helloworld }}</h3>
+    </div>
+
+    <div class="container__item">
+      <ul>
+        <li ng-repeat="item in items" ng-class="{'red': (item.name.length > 4)}">
+          {{ item.name }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="container__item">
+      <input type="text" ng-model="name">
+      <button ng-click="addName(name)">add</button>
+      <div>
+        <p ng-repeat="name in nameList">{{ name }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
