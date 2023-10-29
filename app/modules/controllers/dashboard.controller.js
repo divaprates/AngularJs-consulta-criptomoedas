@@ -1,6 +1,8 @@
 app.controller('DashboardController', DashboardController);
 
-function DashboardController($scope) {
+function DashboardController($scope, apiService) {
     var vm = $scope;
-    vm.oi = 'olá'
+    vm.oi = 'olá';
+
+    console.log('res: ', apiService.getData());
 }

@@ -8,6 +8,11 @@ var app = angular
                 controller: 'DashboardController',
                 controlerAs: 'vm'
             })
+            .state('dashboard', {
+                templateUrl: './app/modules/templates/dashboard.html',
+                controller: 'DashboardController',
+                controlerAs: 'vm'
+            })
             
             $urlRouterProvider.otherwise('/dashboard');
     });
