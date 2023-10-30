@@ -4,5 +4,13 @@ function DashboardController($scope, apiService) {
     var vm = $scope;
     vm.oi = 'olá';
 
-    console.log('res: ', apiService.getData());
+    apiService
+        .getData()
+        .then(result => {
+            
+            if(result.data) {
+                vm.coins = result.data;
+            }
+            
+        });
 }

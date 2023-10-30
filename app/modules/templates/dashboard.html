@@ -2,4 +2,51 @@
     <div class="mt3 f4 measure-wide">
         Você pode conhecer cada criptomoeda clicando nelas!
     </div>
+
+    <div class="row" ng-if="coins">
+        <div class="col-3" ng-repeat="coin in coins">
+            <div class="card p-1 m-2">
+                <div class="card-title">
+                    <div class="row">
+                        <div class="col-8">
+                            <h5 class="card-title">{{coin.name}}</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">{{coin.symbol}}</h6>
+                        </div>
+                        <div class="col-4">
+                            <img
+                            class="card-img-top image-responsive card-image rounded float-right"
+                            style="width: 50px;"
+                            src="{{coin.image}}"
+                            alt="{{coin.name}}"
+                            />
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-body">
+                    <p>{{coin.market_cap_change_percentage_24h}}</p>
+                    <p>
+                        <span class="text-muted">
+                            Preço do ativo:
+                        </span>
+                        {{coin.current_price | currency : '$ '}}
+                    </p>
+
+                    <p>
+                        <span class="text-muted">
+                            Maxima (24hrs):
+                        </span>
+                        {{coin.high_24h | currency : '$ '}}
+                    </p>
+                    
+                    <p>
+                        <span class="text-muted">
+                            Mínima (24hrs):
+                        </span>
+                        {{coin.low_24h | currency : '$ '}}
+                    </p>
+                </div>
+              </div>
+        </div>
+    </div>
 </div>
