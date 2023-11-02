@@ -1,4 +1,7 @@
-## Trabalhando com projetos Legados: Introdução ao AngularJS
+## AngularJs - consulta de Criptomoedas
+- Criando uma aplicação com AngularJs para consultar criptomoedas
+
+### Trabalhando com projetos Legados: Introdução ao AngularJS
 
 A Digital Innovation One junto com a Take, criaram uma parceria
 para que trilhas fossem criadas com o intuito de formar mais desenvolvedores
@@ -6,6 +9,14 @@ nessa aula vocês construíremos do zero uma aplicação em AngularJS.
 
 - os arquivos para a aula estão no repositório público:
 https://github.com/mhnakashima/dio-angularjs-base
+
+<br>
+
+- api de criptomoedas utilizada para consulta das criptomoedas:
+    - URL = https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&locale=en
+
+
+![Alt text](./assets/image.png)
 
 ### Para rodar a aplicação
 

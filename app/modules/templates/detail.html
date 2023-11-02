@@ -1,0 +1,61 @@
+<div class="container p-2">
+    <div class="page-header">
+        <h1>{{coin.name}} ({{coin.symbol}})</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Informações Gerais</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">ATH (All-Time High): {{coin.ath}}</li>
+                    <li class="list-group-item">Variação ATH: {{coin.ath_change_percentage}}%</li>
+                    <li class="list-group-item">Data do ATH: {{coin.ath_date}}</li>
+                    <li class="list-group-item">ATL (All-Time Low): {{coin.atl}}</li>
+                    <li class="list-group-item">Variação ATL: {{coin.atl_change_percentage}}%</li>
+                    <li class="list-group-item">Data do ATL: {{coin.atl_date}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="{{coin.image}}" alt="{{coin.name}}" class="img-fluid">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Valores Atuais</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Preço Atual: {{coin.current_price}}</li>
+                    <li class="list-group-item">Market Cap: {{coin.market_cap}}</li>
+                    <li class="list-group-item">Variação 24h: {{coin.price_change_24h}}
+                        ({{coin.price_change_percentage_24h}}%)</li>
+                    <li class="list-group-item">Volume Total: {{coin.total_volume}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Outras Informações</h2>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Rank de Market Cap: {{coin.market_cap_rank}}</li>
+                    <li class="list-group-item">Circulating Supply: {{coin.circulating_supply}}</li>
+                    <li class="list-group-item">Total Supply: {{coin.total_supply}}</li>
+                    <li class="list-group-item">Max Supply: {{coin.max_supply}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <a ui-sref="dashboard" class="btn btn-primary p-3">
+                Voltar
+            </a>
+        </div>
+    </div>
+</div>

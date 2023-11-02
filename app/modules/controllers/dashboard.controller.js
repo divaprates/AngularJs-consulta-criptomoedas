@@ -2,7 +2,6 @@ app.controller('DashboardController', DashboardController);
 
 function DashboardController($scope, apiService) {
     var vm = $scope;
-    vm.oi = 'olá';
     vm.coins = [];
     vm.pagina = 1;
     vm.numMoedas = 20;

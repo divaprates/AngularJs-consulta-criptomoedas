@@ -1,4 +1,4 @@
-<div class="container p-2 ">
+<div class="container p-2">
     <div class="mt3 f4 measure-wide">
         Você pode conhecer cada criptomoeda clicando nelas!
     </div>
@@ -40,6 +40,12 @@
                             Mínima (24hrs):
                         </span>
                         {{coin.low_24h | currency : '$ '}}
+                    </p>
+
+                    <p>
+                        <a ui-sref="detail({name: coin.name})" class="no-underline pa4 black">
+                            detail
+                        </a>
                     </p>
                 </div>
             </div>

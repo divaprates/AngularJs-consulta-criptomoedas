@@ -13,6 +13,12 @@ var app = angular
                 controller: 'DashboardController',
                 controlerAs: 'vm'
             })
+            .state('detail', {
+                url:'/detail/:name',
+                templateUrl: './app/modules/templates/detail.html',
+                controller: 'DetailController',
+                controlerAs: 'vm'
+            })
             
             $urlRouterProvider.otherwise('/dashboard');
     });
