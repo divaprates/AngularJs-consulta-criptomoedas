@@ -19,6 +19,7 @@ function DashboardController($scope, apiService) {
                 if(result.data) {
                     vm.coins = [...vm.coins, ...result.data];
                     vm.pagina++;
+                    apiService.setCoinsStorage(vm.coins);
                 }
                 
             });

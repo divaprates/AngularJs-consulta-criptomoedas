@@ -11,6 +11,14 @@ app.factory('apiService', ['$http', function ($http) {
                     page
                 }
             })
+        },
+
+        setCoinsStorage: function(coins) {
+            window.localStorage.setItem('coinsStorage', JSON.stringify(coins));
+        },
+
+        getCoinsStorage: function() {
+            return JSON.parse(window.localStorage.getItem('coinsStorage'));
         }
     }
 }])
