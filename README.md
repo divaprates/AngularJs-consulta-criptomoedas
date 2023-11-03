@@ -17,6 +17,8 @@ https://github.com/mhnakashima/dio-angularjs-base
 
 
 ![Alt text](./assets/image.png)
+![Alt text](./assets/image-order.png)
+![Alt text](./assets/image-filter.png)
 ![Alt text](./assets/image-detail.png)
 
 ### Para rodar a aplicação
