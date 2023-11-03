@@ -4,19 +4,27 @@
     </div>
 
     <div class="row mt-3 mb-3 m-1" ng-if="coins">
-        <div class="col-12">
-            <input
-                type="text"
-                placeholder="filtrar criptomoeda"
-                ng-model="search"
-                ng-change="applyFilter(search)"
-            />
+        <div class="col-6">
+            <input type="text" placeholder="filtrar criptomoeda" ng-model="search" ng-change="applyFilter(search)" />
+        </div>
+        <div class="col-6">
+            <div class="p-1 m-2">
+                <span>
+                    Ordenar por: <b> {{ propertyOrder }} </b>
+                </span>
+                <button ng-if="!propertyOrder" ng-click="orderBy('name');" type="button"
+                    class="btn btn-success btn-sm">nome</button>
+                <button ng-if="!propertyOrder" ng-click="orderBy('current_price');" type="button"
+                    class="btn btn-success btn-sm">preço</button>
+                <button ng-if="propertyOrder" ng-click="orderBy('');" type="button"
+                    class="btn btn-warning btn-sm">resetar</button>
+            </div>
         </div>
     </div>
 
 
     <div class="row" ng-if="coins">
-        <div class="col-3" ng-repeat="coin in bufferCoins">
+        <div class="col-3" ng-repeat="coin in bufferCoins | orderBy:propertyOrder:reverse">
             <div class="card p-1 m-2">
                 <div class="card-title">
                     <div class="row">

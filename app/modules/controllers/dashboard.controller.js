@@ -6,6 +6,7 @@ function DashboardController($scope, apiService) {
     vm.bufferCoins = [];
     vm.pagina = 1;
     vm.numMoedas = 20;
+    vm.propertyOrder = '';
 
     vm.init = () => {
         vm.carregarDados();
@@ -37,6 +38,10 @@ function DashboardController($scope, apiService) {
         if(search === '') {
             vm.bufferCoins = vm.coins;
         }
+    }
+
+    vm.orderBy = function(order) {
+        vm.propertyOrder = order;
     }
 
     vm.init();
