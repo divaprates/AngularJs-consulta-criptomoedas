@@ -37,7 +37,7 @@ https://github.com/mhnakashima/dio-angularjs-base
 
 ### Algumas das principais diretivas que utilizamos
  
-ng-app, ng-controller, ng-model, ng-class, ng-click, ng-repeat, ng-show & ng-hide, ng-switch, ng-if, ng-repeat, ng-style, ng-disabled, ng-required, ng-pristine, ng-dirty 
+ng-app, ng-controller, ng-model, ng-class, ng-click, ng-repeat, ng-show & ng-hide, ng-switch, ng-if, ng-style, ng-disabled, ng-required, ng-pristine, ng-dirty 
 
 entre outras
 
